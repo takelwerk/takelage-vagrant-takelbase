@@ -1,0 +1,15 @@
+---
+name: takelage-pvm-takelbase
+version: 0.5.1
+
+pvms:
+  project:
+    target_user: takelwerk
+    target_repo: takelbase
+    packer_template_dir: templates/takelbase/parallels
+
+vboxes:
+  project:
+    target_user: takelwerk
+    target_repo: takelbase
+    packer_template_dir: templates/takelbase/virtualbox
