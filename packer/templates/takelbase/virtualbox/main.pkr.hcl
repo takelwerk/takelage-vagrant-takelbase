@@ -49,8 +49,12 @@ build {
     scripts         = [
       "${var.packer_template_dir}/bin/ssh.sh",
       "${var.packer_template_dir}/bin/sudo.sh",
+      "${var.packer_template_dir}/bin/apt.sh",
+      "${var.packer_template_dir}/bin/systemd.sh",
       "${var.packer_template_dir}/bin/guest.sh",
-      "${var.packer_template_dir}/bin/apt.sh"]
+      "${var.packer_template_dir}/bin/cleanup.sh",
+      "${var.packer_template_dir}/bin/minimize.sh",
+    ]
   }
 
   post-processor "vagrant" {

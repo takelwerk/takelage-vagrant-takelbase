@@ -1,0 +1,26 @@
+---
+name: Build and deploy virtualbox
+
+on:
+  schedule: # run daily at midnight CET
+    - cron: '0 1 * * *'
+  workflow_dispatch:  # allow manual trigger
+
+jobs:
+  build-and-deploy-vbox:
+    runs-on: macos-10.15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Install ansible
+        run: brew install ansible
+
+      - name: Install tau
+        run: gem install takeltau
+
+      - name: Build vagrant box
+        run: rake vboxes:project:build
+
+      - name: Push vagrant box
+        run: ATLAS_TOKEN=${{ secrets.ATLAS_TOKEN }} rake vagrantup:project:push
