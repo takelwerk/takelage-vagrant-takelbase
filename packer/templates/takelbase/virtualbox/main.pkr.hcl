@@ -23,10 +23,10 @@ source "virtualbox-iso" "takelage" {
   guest_os_type           = "Debian_64"
   headless                = true
   http_directory          = "${var.packer_template_dir}/http"
-  iso_checksum            = "sha256:8488abc1361590ee7a3c9b00ec059b29dfb1da40f8ba4adf293c7a30fa943eb2"
+  iso_checksum            = "sha256:45c9feabba213bdc6d72e7469de71ea5aeff73faea6bfb109ab5bad37c3b43bd"
   iso_urls                = [
-    "iso/debian-11.1.0-amd64-netinst.iso",
-    "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.1.0-amd64-netinst.iso"
+    "iso/debian-11.2.0-amd64-netinst.iso",
+    "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.2.0-amd64-netinst.iso"
   ]
   shutdown_command        = "echo 'vagrant'|sudo -S shutdown -P now"
   ssh_password            = "vagrant"
