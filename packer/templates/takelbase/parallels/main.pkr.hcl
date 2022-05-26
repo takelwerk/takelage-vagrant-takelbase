@@ -22,10 +22,10 @@ source "parallels-iso" "takelage" {
   disk_size               = 81920
   guest_os_type           = "debian"
   http_directory          = "${var.packer_template_dir}/http"
-  iso_checksum            = "sha256:45c9feabba213bdc6d72e7469de71ea5aeff73faea6bfb109ab5bad37c3b43bd"
+  iso_checksum            = "sha256:7892981e1da216e79fb3a1536ce5ebab157afdd20048fe458f2ae34fbc26c19b"
   iso_urls                = [
-    "iso/debian-11.2.0-amd64-netinst.iso",
-    "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.2.0-amd64-netinst.iso"
+    "iso/debian-11.3.0-amd64-netinst.iso",
+    "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso"
   ]
   memory                  = "2048"
   parallels_tools_flavor  = "lin"
