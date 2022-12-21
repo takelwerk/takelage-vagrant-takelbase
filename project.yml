@@ -1,6 +1,6 @@
 ---
 name: takelage-pvm-takelbase
-version: 0.5.6
+version: 0.6.0
 
 pvms:
   project:
