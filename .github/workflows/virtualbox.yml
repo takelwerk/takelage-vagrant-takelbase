@@ -1,5 +1,5 @@
 ---
-name: Build and deploy virtualbox
+name: virtualbox
 
 on:
   schedule: # run daily at midnight CET
@@ -7,11 +7,11 @@ on:
   workflow_dispatch:  # allow manual trigger
 
 jobs:
-  build-and-deploy-vbox:
-    runs-on: macos-10.15
+  virtualbox:
+    runs-on: macos-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install ansible
         run: brew install ansible
