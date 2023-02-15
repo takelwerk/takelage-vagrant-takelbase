@@ -1,5 +1,5 @@
 ---
-name: takelage-pvm-takelbase
+name: takelage-vagrant-takelbase
 version: 0.6.1
 
 pvms:
