@@ -1,5 +1,5 @@
 ---
-name: virtualbox
+name: takelbase vagrant virtualbox
 
 on:
   schedule: # run daily at midnight CET
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:  # allow manual trigger
 
 jobs:
-  virtualbox:
+  takelbase-vagrant-virtualbox:
     runs-on: macos-latest
     steps:
       - name: Check out repository
