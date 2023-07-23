@@ -2,12 +2,6 @@
 name: takelage-vagrant-takelbase
 version: 0.6.2
 
-pvms:
-  project:
-    target_user: takelwerk
-    target_repo: takelbase
-    packer_template_dir: templates/takelbase/parallels
-
 vboxes:
   project:
     target_user: takelwerk
